@@ -19,7 +19,7 @@ TextField {
   background: Rectangle {
     id: passFieldBackground
     radius: 3
-    color: config.background_light  // config.surface0 
+    color: config.backgroundLight  // config.surface0 
   }
   states: [
     State {

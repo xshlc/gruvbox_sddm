@@ -7,7 +7,7 @@ TextField {
   width: inputWidth
   selectByMouse: true
   echoMode: TextInput.Normal
-  selectionColor: config.overlay0
+  selectionColor: config.blue_gray
   renderType: Text.NativeRendering
   font {
     family: config.Font
@@ -20,7 +20,7 @@ TextField {
   text: userModel.lastUser
   background: Rectangle {
     id: userFieldBackground
-    color: config.background_light  // config.surface0
+    color: config.backgroundLight  // config.surface0
     radius: 3
   }
   states: [

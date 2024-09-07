@@ -18,7 +18,7 @@ Item {
     width: inputWidth * 1.2
     radius: 5
     visible: config.LoginBackground == "true" ? true : false
-    color: config.background  // config.mantle
+    color: config.errorRed  // config.mantle
   }
   Column {
     spacing: 8
@@ -83,12 +83,12 @@ Item {
         }
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
-        color: config.background_dark  // config.crust
+        color: config.backgroundDark  // config.crust
         text: "Login"
       }
       background: Rectangle {
         id: buttonBackground
-        color: config.error_red  // config.sapphire
+        color: config.errorRed  // config.sapphire
         radius: 3
       }
       states: [

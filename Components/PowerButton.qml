@@ -13,12 +13,12 @@ Item {
       source: Qt.resolvedUrl("../icons/power.svg")
       height: height
       width: width
-      color: config.background_dark  // config.crust
+      color: config.backgroundDark  // config.crust
     }
     background: Rectangle {
       id: powerButtonBackground
       radius: 3
-      color: config.original_yellow  // config.red
+      color: config.originalYellow  // config.red
     }
     states: [
       State {
@@ -26,7 +26,7 @@ Item {
         when: powerButton.hovered
         PropertyChanges {
           target: powerButtonBackground
-          color: config.bright_yellow  // config.rosewater
+          color: config.brightYellow  // config.rosewater
         }
       }
     ]

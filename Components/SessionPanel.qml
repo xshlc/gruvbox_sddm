@@ -67,7 +67,7 @@ Item {
     }
     background: Rectangle {
       id: sessionButtonBackground
-      color: config.soft_green  // config.surface0
+      color: config.softGreen  // config.surface0
       radius: 3
     }
     states: [
@@ -76,7 +76,7 @@ Item {
         when: sessionButton.down
         PropertyChanges {
           target: sessionButtonBackground
-          color: config.bright_green  // config.surface1
+          color: config.brightGreen  // config.surface1
         }
       },
       State {
@@ -84,7 +84,7 @@ Item {
         when: sessionButton.hovered
         PropertyChanges {
           target: sessionButtonBackground
-          color: config.dark_green // config.surface2
+          color: config.darkGreen // config.surface2
         }
       },
       State {
@@ -92,7 +92,7 @@ Item {
         when: sessionPopup.visible
         PropertyChanges {
           target: sessionButtonBackground
-          color: config.dark_green  // config.surface2
+          color: config.darkGreen  // config.surface2
         }
       }
     ]
@@ -115,7 +115,7 @@ Item {
     padding: inputHeight / 10
     background: Rectangle {
       radius: 5.4
-      color: config.background_light  // config.surface0
+      color: config.backgroundLight  // config.surface0
     }
     contentItem: ListView {
       id: sessionList
